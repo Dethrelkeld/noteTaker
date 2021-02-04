@@ -35,6 +35,11 @@ class Notes {
 
     };
 
+    deleteNote(id) {
+        return this.getNotes().then(notesArray => notesArray.filter((note) => note.id !== id)).then(filteredNotes => this.write(filteredNotes))
+    }
+
+
 }
 
 module.exports = new Notes() 

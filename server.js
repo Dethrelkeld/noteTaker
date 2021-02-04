@@ -3,6 +3,7 @@
 const express = require('express');
 const path = require('path');
 const viewRoute = require("./routes/view");
+const apiRoutes = require('./routes/api')
 // Sets up the Express App
 
 const app = express();
@@ -14,8 +15,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // connect routes
-app.use("/", viewRoute)
-
+app.use("/", viewRoute);
+app.use('/api', apiRoutes);
 
 // start server
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
