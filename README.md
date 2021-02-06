@@ -1,6 +1,7 @@
 # Note Taker
 
 https://dethrelkeld.github.io/noteTaker/
+https://dashboard.heroku.com/apps/glacial-basin-86805
 
 ![gif of screenshot](./Assets/noteTaker.gif)
 
